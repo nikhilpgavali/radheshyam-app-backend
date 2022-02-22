@@ -10,7 +10,7 @@ setEnvVariables(){
     console.log("username=>", process.env.username);
     console.log("password=>", process.env.password);
     console.log("hostname=>", process.env.host);
-    console.log("database=>", process.env.database);
+    console.log("database=>", process.env.db);
     let url = this.parseDatabaseUrl(process.env.DATABASE_URL);
     if(process.env.username != url.username) {
         process.env.username = url.username;
@@ -21,8 +21,8 @@ setEnvVariables(){
     if(process.env.host != url.host) {
         process.env.host = url.host;
     }
-    if(process.env.database != url.database) {
-        process.env.database = url.database;
+    if(process.env.db != url.database) {
+        process.env.db = url.database;
     }
     return "Success";
 }
