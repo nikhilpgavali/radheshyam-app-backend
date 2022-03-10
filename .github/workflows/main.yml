@@ -15,6 +15,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "docker-simple-nik"
-          heroku_email: "gavalinikhil700@gmail.com"
+          heroku_app_name: "radhedhyam-docker-container"
+          heroku_email: "nikhilgavali07@gmail.com"
           usedocker: true
